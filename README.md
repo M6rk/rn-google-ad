@@ -1,1 +1,1 @@
-# rn-google-ad
+# RN Google Ad

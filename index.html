@@ -1,0 +1,171 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+ <body style="background-color: #2F2F2F;">
+
+
+<div
+  class="rn-design-preview-center"
+  style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;z-index:2147483647;"
+>
+  <div class="rn-ad" data-rn-ad role="img" aria-label="Renatus Network Minecraft server banner ad">
+    <style>
+
+      .rn-ad{font-family:Arial,Helvetica,sans-serif;width:min(100%,728px);height:90px;padding:5px 10px 4px;background:linear-gradient(135deg,#6c0f16,#b71c25 55%,#3f090d);color:#fff;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.08);display:flex;flex-direction:column;box-sizing:border-box;position:relative;cursor:pointer}
+      .rn-ad::before{content:"";position:absolute;inset:0;background:url('assets/rn-screen.png') center/cover no-repeat;filter:blur(2px) brightness(.82) saturate(1.08);transform:scale(1.06);opacity:.9}
+      .rn-ad::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(108,15,22,.28),rgba(183,28,37,.15) 55%,rgba(63,9,13,.3))}
+      .rn-ad > *{position:relative;z-index:1}
+      .rn-ad .rn-stars{position:absolute;inset:0;z-index:0;pointer-events:none}
+      .rn-ad .rn-star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;box-shadow:0 0 6px 2px rgba(255,255,255,.9),0 0 12px 4px rgba(255,220,120,.22);opacity:0;animation:rnTwinkle 2.8s ease-in-out infinite}
+      @keyframes rnTwinkle{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:1;transform:scale(1.15)}}
+      .rn-ad .rn-banner-main{position:relative;flex:1;display:flex;align-items:center;justify-content:center}
+      .rn-ad .rn-blocks{display:none}
+      .rn-ad .rn-text-cluster{position:relative;width:100%;height:54px}
+      .rn-ad .rn-logo{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);display:block;height:70px;width:auto;max-width:250px;filter:drop-shadow(0 3px 0 rgba(0,0,0,.3)) drop-shadow(0 0 10px rgba(255,160,160,.22));animation:rnLogoSway 2s ease-in-out infinite alternate;transform-origin:center center}
+      @keyframes rnLogoSway{from{transform:translate(-50%,-50%) rotate(-2deg)}to{transform:translate(-50%,-50%) rotate(2deg)}}
+      .rn-ad .rn-subheading{margin:0;font-family:'Bungee',cursive;font-size:20px;line-height:1;font-weight:400;white-space:nowrap;letter-spacing:.2px;text-transform:uppercase;text-shadow:none;opacity:.76;transform:scale(1);transition:transform .2s ease,opacity .2s ease,text-shadow .2s ease;transform-origin:center}
+      .rn-ad .rn-subheading.is-active{opacity:1;transform:scale(1.1);text-shadow:0 0 1px rgba(255,255,255,.8),0 0 12px rgba(255,255,255,.3),0 0 10px rgba(255,170,60,.24),0 2px 0 rgba(0,0,0,.42),0 3px 8px rgba(0,0,0,.2)}
+      .rn-ad .rn-sub-top-left,.rn-ad .rn-sub-top-right,.rn-ad .rn-sub-bottom-left,.rn-ad .rn-sub-bottom-right{position:absolute}
+      .rn-ad .rn-sub-top-left{left:18px;top:2px;color:#ffe08a}.rn-ad .rn-sub-top-right{right:18px;top:2px;color:#ff8a4c}.rn-ad .rn-sub-bottom-left{left:18px;bottom:2px;color:#e85b4b}.rn-ad .rn-sub-bottom-right{right:18px;bottom:2px;color:#c0c0c0}
+      
+      /* IP button */
+      .rn-ad .rn-ip-container{width:min(100%,250px);height:26px;margin:0 auto;border-radius:14px;background:linear-gradient(90deg,rgba(0,0,0,.48),rgba(255,255,255,.02));color:#fff;display:flex;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:700;padding:0 10px;cursor:pointer;box-shadow:0 6px 14px rgba(232,91,75,.12),inset 0 1px 0 rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.06);transition:transform .14s ease,box-shadow .14s ease}
+      .rn-ad .rn-ip-container:hover{box-shadow:0 10px 24px rgba(232,91,75,.18);filter:brightness(1.08)}
+      .rn-ad .rn-ip-container::before{content:"";position:absolute;inset:0;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,0));pointer-events:none}
+      .rn-ad .rn-ip-value{position:relative;font-size:14px;font-weight:700;font-family:'Bungee',cursive;letter-spacing:1.2px;color:#fff;margin-top:0;text-shadow:0 1px 0 rgba(0,0,0,.6);opacity:.85;transition:opacity .12s ease,font-size .12s ease,transform .12s ease}
+      .rn-ad .rn-ip-container:hover .rn-ip-value{opacity:1;font-size:13px;transform: scale(1.12)}
+
+      /* pop-up pill for when IP is copied */
+      .rn-ad .rn-status{position:absolute;left:50%;bottom:36px;min-width:88px;height:26px;padding:0 12px;border-radius:999px;background:#2F2F2F;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;line-height:1;letter-spacing:.2px;opacity:0;transform:translateX(-50%) scale(.92);transition:opacity .18s ease,transform .18s ease;pointer-events:none;z-index:6;box-shadow:0 8px 20px rgba(0,0,0,.32)}
+      .rn-ad .rn-status.is-visible{opacity:1;transform:translateX(-50%) scale(1)}
+
+    </style>
+
+    <div class="rn-banner-main">
+      <div class="rn-stars" aria-hidden="true"></div>
+      <div class="rn-blocks rn-blocks-left" aria-hidden="true">
+        <span class="rn-mc-block"></span>
+        <span class="rn-mc-block"></span>
+      </div>
+
+      <div class="rn-text-cluster">
+        <p class="rn-subheading rn-sub-top-left">#1 Parkour Server</p>
+        <p class="rn-subheading rn-sub-top-right">500+ Unique Levels</p>
+        <img class="rn-logo" src="assets/rn_icon.png" alt="Renatus Network" />
+        <p class="rn-subheading rn-sub-bottom-left">Black Market</p>
+        <p class="rn-subheading rn-sub-bottom-right">+ Much More!</p>
+      </div>
+
+      <div class="rn-blocks rn-blocks-right" aria-hidden="true">
+        <span class="rn-mc-block"></span>
+        <span class="rn-mc-block"></span>
+      </div>
+    </div>
+
+    <button class="rn-ip-container" type="button" aria-label="Copy server IP" title="Copy Server IP">
+      <span class="rn-ip-value">mc.parkourcraft.com</span>
+    </button>
+    <span class="rn-status" aria-live="polite"></span>
+  </div>
+</div>
+</body>
+<script>
+  (() => {
+    const adRoot = document.querySelector('[data-rn-ad]');
+    if (!adRoot) return;
+
+    const ipCopyBox = adRoot.querySelector('.rn-ip-container');
+    const serverIpField = adRoot.querySelector('.rn-ip-value');
+    const copyStatus = adRoot.querySelector('.rn-status');
+    if (!ipCopyBox || !serverIpField || !copyStatus) return;
+
+    const subheadings = Array.from(adRoot.querySelectorAll('.rn-subheading'));
+    let activeSubheadingIndex = 0;
+    const subheadingCycleMs = 2400;
+    const subheadingStepMs = subheadings.length ? Math.floor(subheadingCycleMs / subheadings.length) : 0;
+
+    function setActiveSubheading(index) {
+      subheadings.forEach((heading, headingIndex) => {
+        heading.classList.toggle('is-active', headingIndex === index);
+      });
+    }
+
+    if (subheadings.length) {
+      setActiveSubheading(activeSubheadingIndex);
+      window.setInterval(() => {
+        activeSubheadingIndex = (activeSubheadingIndex + 1) % subheadings.length;
+        setActiveSubheading(activeSubheadingIndex);
+      }, subheadingStepMs);
+    }
+
+    function setStatus(message) {
+      copyStatus.textContent = message;
+    }
+
+    function showCopied() {
+      setStatus('Copied IP');
+      copyStatus.classList.add('is-visible');
+      window.clearTimeout(copyStatus._hideTimer);
+      copyStatus._hideTimer = window.setTimeout(() => {
+        copyStatus.classList.remove('is-visible');
+        window.setTimeout(() => setStatus(''), 220);
+      }, 900);
+    }
+
+    const stars = adRoot.querySelector('.rn-stars');
+    if (stars && !stars.children.length) {
+      const count = 28;
+      for (let i = 0; i < count; i++) {
+        const star = document.createElement('span');
+        star.className = 'rn-star';
+        star.style.left = `${(i / (count - 1)) * 100 + (Math.random() * 6 - 3)}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 2.8}s`;
+        star.style.animationDuration = `${2 + Math.random() * 2.2}s`;
+        star.style.transform = `scale(${0.7 + Math.random() * 0.9})`;
+        stars.appendChild(star);
+      }
+    }
+
+    async function copyServerIp() {
+      const value = (serverIpField.textContent || '').trim();
+      if (!value) {
+        setStatus('Error');
+        return false;
+      }
+
+      try {
+        if (navigator.clipboard?.writeText) {
+          await navigator.clipboard.writeText(value);
+        } else {
+          const temp = document.createElement('textarea');
+          temp.value = value;
+          temp.setAttribute('readonly', '');
+          temp.style.position = 'fixed';
+          temp.style.opacity = '0';
+          document.body.appendChild(temp);
+          temp.select();
+          document.execCommand('copy');
+          temp.remove();
+        }
+
+        showCopied();
+        return true;
+      } catch {
+        setStatus('Error');
+        return false;
+      }
+    }
+
+    ipCopyBox.addEventListener('click', async () => {
+      await copyServerIp();
+    });
+
+    // link to site covering all but IP
+    adRoot.addEventListener('click', (e) => {
+      if (e.target.closest('.rn-ip-container') || e.target.closest('.rn-status')) return;
+      window.open('https://renatusnetwork.com/', '_blank');
+    });
+  })();
+</script>
